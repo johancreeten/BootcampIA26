@@ -26,6 +26,32 @@ const steps = [
   {
     title: "Concevoir",
     duration: "20 min",
+    title: "Créer l’attention",
+    duration: "10 min",
+    mode: "plénière",
+    goal: "Faire sentir la différence entre une activité qui passe et une activité qui reste.",
+    activities: [
+      "Question choc : “Quelle trace votre dernière formation a-t-elle laissée 7 jours après ?”",
+      "Positionnement silencieux sur une ligne : souvenir faible ↔ souvenir durable.",
+      "Collecte de 3 facteurs qui favorisent l’ancrage."
+    ],
+    note: "Ouvrir par une expérience corporelle et émotionnelle plutôt que par une définition."
+  },
+  {
+    title: "Diagnostiquer",
+    duration: "15 min",
+    mode: "triades",
+    goal: "Repérer les moments où les apprentissages se dissolvent dans leurs formations.",
+    activities: [
+      "Chaque triade choisit une formation réelle.",
+      "Identification d’un moment fragile : surcharge, abstraction, manque de pratique, oubli.",
+      "Formulation d’un défi d’ancrage en une phrase."
+    ],
+    note: "Faire émerger les contraintes du Forem, de Bruxelles Formation et de l’IFAPME sans comparer les institutions."
+  },
+  {
+    title: "Concevoir",
+    duration: "25 min",
     mode: "groupes de 4",
     goal: "Transformer un défi en micro-dispositif pédagogique observable.",
     activities: [
@@ -38,6 +64,7 @@ const steps = [
   {
     title: "Augmenter par l’IA",
     duration: "20 min",
+    duration: "25 min",
     mode: "laboratoire",
     goal: "Utiliser l’IA pour produire des variantes, des simulations et du feedback actionnable.",
     activities: [
