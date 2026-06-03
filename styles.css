@@ -331,6 +331,7 @@ h3 { font-size: 1.28rem; margin-bottom: 10px; }
 .step-meta { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
 .badge { padding: 8px 12px; border: 2px solid var(--ink); border-radius: 999px; background: white; font-weight: 900; }
 .stage-goal { font-size: 1.15rem; font-weight: 900; }
+.participant-title { margin: 18px 0 10px; font-size: .95rem; text-transform: uppercase; letter-spacing: .08em; color: var(--red); }
 .activity-list { padding-left: 1.2rem; line-height: 1.75; font-weight: 700; }
 .deliverable, .facilitator-note { padding: 14px 16px; border-left: 7px solid var(--red); background: #fffaf0; line-height: 1.6; }
 .facilitator-note { border-left-color: var(--blue); }
@@ -338,6 +339,7 @@ h3 { font-size: 1.28rem; margin-bottom: 10px; }
 .check-item { display: flex; align-items: flex-start; gap: 10px; padding: 13px; border: 2px solid var(--ink); border-radius: 14px; background: white; font-weight: 800; }
 .check-item input { width: 20px; height: 20px; accent-color: var(--red); margin-top: 2px; }
 .stage-actions { justify-content: space-between; flex-wrap: wrap; }
+.screen-controls { opacity: .78; }
 
 .canvas-grid { display: grid; grid-template-columns: 1fr .9fr; gap: 18px; align-items: stretch; }
 .paper, .exam-copy { background: repeating-linear-gradient(#fff7dc 0 34px, #ead7a0 35px 36px); }

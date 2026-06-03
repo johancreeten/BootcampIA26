@@ -8,6 +8,11 @@ const steps = [
     posture: "Ils jouent. Le groupe subit volontairement.",
     goal: "Créer un décrochage contrôlé pour disposer d’une matière émotionnelle commune.",
     activities: [
+      "Observez votre attention : qu’est-ce qui vous accroche ou vous fait décrocher ?",
+      "Repérez ce qui manque : utilité, lien au terrain, interaction, autonomie ?",
+      "Préparez un mot ou une phrase pour décrire votre ressenti."
+    ],
+    deliverable: "vos mots sur ce qui aide ou empêche un adulte d’apprendre.",
       "Johan lance un cours pompeux, jargonnant, trop sûr de lui.",
       "Sandra renforce l’absurde : discipline, diapo imaginaire, interdiction des questions.",
       "Stop net après 3 minutes, sans laisser la blague s’installer trop longtemps."
@@ -24,6 +29,11 @@ const steps = [
     posture: "Ils cadrent. Le groupe verbalise.",
     goal: "Faire émerger les principes de l’apprentissage adulte depuis ce qui vient d’être ressenti.",
     activities: [
+      "Partagez ce qui a freiné votre attention ou votre envie d’apprendre.",
+      "Reliez vos réponses aux besoins d’un adulte apprenant : utilité, expérience, problème réel, autonomie, transfert.",
+      "Gardez un principe que vous voulez mieux intégrer dans vos formations."
+    ],
+    deliverable: "une grille simple pour relire vos propres formations.",
       "Question : “Qu’est-ce qui vous a empêchés d’apprendre ?”",
       "Classer les réponses : utilité, expérience, problème réel, autonomie, transfert.",
       "Relier au cadre Knowles sans refaire un cours descendant."
@@ -40,6 +50,11 @@ const steps = [
     posture: "Ils articulent. Le groupe valide par exemples.",
     goal: "Clarifier que l’ancrage fait durer et que la mise en action transforme le savoir en mouvement concret.",
     activities: [
+      "Identifiez ce qui doit rester mobilisable après la formation.",
+      "Repérez le premier geste concret attendu chez vos apprenants.",
+      "Complétez : “La formation sort de la salle quand…”"
+    ],
+    deliverable: "une phrase repère reliant ancrage et mise en action.",
       "Ancrage : rester mobilisable pendant et après la formation, dans une situation réelle.",
       "Mise en action : passer du savoir compris au savoir utilisé, testé et ajusté.",
       "Faire formuler un exemple : “la formation sort de la salle quand…”"
@@ -56,6 +71,11 @@ const steps = [
     posture: "Elle pose les règles du jeu.",
     goal: "Positionner l’IA comme aide pédagogique, pas comme distributeur d’exercices génériques.",
     activities: [
+      "Gardez votre expertise : l’IA propose, vous arbitrez.",
+      "Vérifiez votre intention avant d’écrire un prompt.",
+      "Transformez “donne-moi un exercice” en demande précise pour votre public."
+    ],
+    deliverable: "un principe de vigilance : l’intention pédagogique passe avant l’effet waouh.",
       "Avertissement : l’IA ne remplace pas la créativité pédagogique.",
       "Dire explicitement : l’intention précède toujours l’outil.",
       "Montrer qu’on ne demande pas “un exercice”, mais une activité d’ancrage pour un public précis."
@@ -72,6 +92,11 @@ const steps = [
     posture: "Ils guident. Chacun remplit sa copie.",
     goal: "Obliger les participants à préciser leur besoin avant de lancer une conversation IA.",
     activities: [
+      "Complétez le canevas avec votre situation réelle.",
+      "Choisissez un seul contenu à ancrer, pas toute une formation.",
+      "Formulez un changement observable dans la pratique."
+    ],
+    deliverable: "une intention claire, prête à devenir un prompt.",
       "Compléter le canevas : contenu, public, contexte, moment, changement attendu, contraintes.",
       "Faire choisir un seul contenu à ancrer, pas toute une formation.",
       "Vérifier que le changement attendu est observable."
@@ -88,6 +113,11 @@ const steps = [
     posture: "Ils montrent puis laissent tester sous contrôle.",
     goal: "Tester un prompt simple, réplicable, qui s’appuie sur l’expérience et les problèmes réels.",
     activities: [
+      "Générez l’antisèche de prompt depuis votre canevas.",
+      "Testez le prompt avec votre propre contexte.",
+      "Repérez ce qui est trop scolaire, trop vague ou trop loin du terrain."
+    ],
+    deliverable: "une première proposition IA à critiquer.",
       "Générer l’antisèche de prompt depuis le canevas.",
       "Chaque participant teste le prompt avec son propre contexte.",
       "Repérer immédiatement ce qui est trop scolaire, trop vague ou trop éloigné du terrain."
@@ -104,6 +134,11 @@ const steps = [
     posture: "Ils orchestrent le recul professionnel.",
     goal: "Passer de “l’IA a répondu” à “cette réponse est-elle pédagogiquement valable ?”.",
     activities: [
+      "Comparez : qu’est-ce qui est réaliste, applicable, cohérent avec votre public ?",
+      "Choisissez une relance : moins scolaire, plus terrain, moins écrit ou plus autonome.",
+      "Gardez les critères d’une bonne activité d’ancrage."
+    ],
+    deliverable: "des critères et relances pour améliorer une réponse IA.",
       "Comparer les sorties : qu’est-ce qui est réaliste, applicable, cohérent avec le public ?",
       "Faire émerger des relances : moins scolaire, plus terrain, moins écrit, plus autonome.",
       "Noter collectivement les critères d’une bonne activité d’ancrage."
@@ -120,6 +155,11 @@ const steps = [
     posture: "Ils font produire vite.",
     goal: "Faire évoluer l’activité jusqu’à ce qu’elle soit utilisable dès le lendemain.",
     activities: [
+      "Choisissez une relance et améliorez votre résultat.",
+      "Vérifiez trois critères : réaliste, applicable, cohérent avec votre public.",
+      "Gardez une version courte de votre activité finale."
+    ],
+    deliverable: "une activité d’ancrage améliorée par itération.",
       "Chaque participant choisit une relance et améliore son résultat.",
       "Vérifier trois critères : réaliste, applicable, cohérent avec le public.",
       "Garder une version courte de l’activité finale."
@@ -136,6 +176,11 @@ const steps = [
     posture: "Ils inversent la posture.",
     goal: "Montrer comment l’IA peut placer le formateur dans la peau de l’apprenant.",
     activities: [
+      "Observez une conversation où l’IA joue l’apprenant face à un contenu de formation.",
+      "Repérez comment les contraintes concrètes modifient la proposition.",
+      "Déduisez : quelles consignes ont permis d’obtenir ce résultat ?"
+    ],
+    deliverable: "un exemple de conversation inversée pour préparer vos formations.",
       "Configurer une conversation où l’IA joue l’apprenant face au contenu de formation.",
       "Tester une mise en action tenant compte de contraintes concrètes.",
       "Demander : “Comment ce résultat a-t-il été produit ?”"
@@ -152,6 +197,11 @@ const steps = [
     posture: "Ils restent aux commandes pendant la pratique.",
     goal: "Faire produire un exercice de mise en action, pas seulement une interaction sympathique avec l’IA.",
     activities: [
+      "Configurez une conversation inversée sur votre contenu.",
+      "Mettez-vous dans la peau de vos apprenants.",
+      "Extrayez un exercice concret de mise en action."
+    ],
+    deliverable: "un exercice de mise en action relié à votre formation réelle.",
       "Les participants configurent une conversation inversée sur leur contenu.",
       "Ils se mettent dans la peau de leurs apprenants.",
       "Ils extraient un exercice concret de mise en action."
@@ -168,6 +218,11 @@ const steps = [
     posture: "Ils ouvrent la suite et referment l’atelier.",
     goal: "Donner à voir l’agent dédié comme prolongement possible, sans ouvrir un nouveau chantier complet.",
     activities: [
+      "Découvrez ce qu’un agent d’ancrage et de mise en action peut suivre.",
+      "Choisissez une action testable dès demain.",
+      "Formulez une phrase d’engagement individuel."
+    ],
+    deliverable: "une action, un indicateur, une date de réutilisation.",
       "Montrer brièvement ce qu’un agent d’ancrage et de mise en action peut suivre.",
       "Faire verbaliser une action testable dès demain.",
       "Clôturer par une phrase d’engagement individuel."
@@ -319,6 +374,10 @@ function renderStage() {
   stage.innerHTML = `
     <div class="stage-header">
       <div>
+        <p class="stage-kicker">${step.start}’ → ${step.start + step.duration}’ · ${step.block}</p>
+        <h3>${step.title}</h3>
+      </div>
+      <span class="stamp-mini">À vous</span>
         <p class="stage-kicker">${step.start}’ → ${step.start + step.duration}’ · ${step.owner}</p>
         <h3>${step.title}</h3>
       </div>
@@ -328,6 +387,17 @@ function renderStage() {
       <div>
         <div class="step-meta">
           <span class="badge">${step.duration} min</span>
+          <span class="badge">Sandra et Johan vous guident</span>
+        </div>
+        <p class="stage-goal">${step.goal}</p>
+        <h4 class="participant-title">Ce que vous faites maintenant</h4>
+        <ol class="activity-list">
+          ${step.activities.map(activity => `<li>${activity}</li>`).join("")}
+        </ol>
+        <p class="deliverable"><strong>À garder :</strong> ${step.deliverable}</p>
+      </div>
+      <div class="check-panel" aria-label="Repères de l'étape">
+        <h4 class="participant-title">Repères visibles</h4>
           <span class="badge">${step.posture}</span>
         </div>
         <p class="stage-goal">${step.goal}</p>
@@ -357,6 +427,9 @@ function renderStage() {
             <span>${activity}</span>
           </label>
         `).join("")}
+        <div class="stage-actions screen-controls" aria-label="Contrôles de navigation pour Sandra et Johan">
+          <button class="ghost-button small" type="button" data-move="previous">← Précédent</button>
+          <button class="primary-button small" type="button" data-move="next">Suivant →</button>
         <div class="stage-actions">
           <button class="ghost-button small" type="button" data-move="previous">← Étape précédente</button>
           <button class="primary-button small" type="button" data-move="next">Étape suivante →</button>
