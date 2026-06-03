@@ -6,6 +6,7 @@ const steps = [
     duration: 5,
     owner: "Johan + Sandra",
     posture: "Ils jouent. Le groupe subit volontairement.",
+    goal: "Écouter un faux cours et repérer ce qui donne envie de décrocher.",
     goal: "Créer un décrochage contrôlé pour disposer d’une matière émotionnelle commune.",
     activities: [
       "Observez votre attention : qu’est-ce qui vous accroche ou vous fait décrocher ?",
@@ -27,6 +28,7 @@ const steps = [
     duration: 10,
     owner: "Sandra mène, Johan note au tableau",
     posture: "Ils cadrent. Le groupe verbalise.",
+    goal: "Mettre des mots sur ce qui aide ou empêche un adulte d’apprendre.",
     goal: "Faire émerger les principes de l’apprentissage adulte depuis ce qui vient d’être ressenti.",
     activities: [
       "Partagez ce qui a freiné votre attention ou votre envie d’apprendre.",
@@ -48,6 +50,7 @@ const steps = [
     duration: 10,
     owner: "Johan mène, Sandra reformule",
     posture: "Ils articulent. Le groupe valide par exemples.",
+    goal: "Comprendre le lien entre apprentissage qui dure et passage à l’action.",
     goal: "Clarifier que l’ancrage fait durer et que la mise en action transforme le savoir en mouvement concret.",
     activities: [
       "Identifiez ce qui doit rester mobilisable après la formation.",
@@ -69,6 +72,7 @@ const steps = [
     duration: 5,
     owner: "Sandra",
     posture: "Elle pose les règles du jeu.",
+    goal: "Situer l’IA comme aide de conception, pas comme solution magique.",
     goal: "Positionner l’IA comme aide pédagogique, pas comme distributeur d’exercices génériques.",
     activities: [
       "Gardez votre expertise : l’IA propose, vous arbitrez.",
@@ -90,6 +94,7 @@ const steps = [
     duration: 5,
     owner: "Johan chronomètre, Sandra accompagne",
     posture: "Ils guident. Chacun remplit sa copie.",
+    goal: "Clarifier votre besoin avant de lancer une conversation IA.",
     goal: "Obliger les participants à préciser leur besoin avant de lancer une conversation IA.",
     activities: [
       "Complétez le canevas avec votre situation réelle.",
@@ -111,6 +116,7 @@ const steps = [
     duration: 10,
     owner: "Sandra démontre, Johan circule",
     posture: "Ils montrent puis laissent tester sous contrôle.",
+    goal: "Tester un prompt simple, réplicable et lié à une situation réelle.",
     goal: "Tester un prompt simple, réplicable, qui s’appuie sur l’expérience et les problèmes réels.",
     activities: [
       "Générez l’antisèche de prompt depuis votre canevas.",
@@ -132,6 +138,7 @@ const steps = [
     duration: 10,
     owner: "Johan anime la critique",
     posture: "Ils orchestrent le recul professionnel.",
+    goal: "Passer de “l’IA a répondu” à “est-ce utile pour mon public ?”.",
     goal: "Passer de “l’IA a répondu” à “cette réponse est-elle pédagogiquement valable ?”.",
     activities: [
       "Comparez : qu’est-ce qui est réaliste, applicable, cohérent avec votre public ?",
@@ -153,6 +160,7 @@ const steps = [
     duration: 5,
     owner: "Sandra relance le rythme",
     posture: "Ils font produire vite.",
+    goal: "Améliorer l’activité jusqu’à ce qu’elle soit utilisable rapidement.",
     goal: "Faire évoluer l’activité jusqu’à ce qu’elle soit utilisable dès le lendemain.",
     activities: [
       "Choisissez une relance et améliorez votre résultat.",
@@ -174,6 +182,7 @@ const steps = [
     duration: 15,
     owner: "Johan démontre, Sandra questionne",
     posture: "Ils inversent la posture.",
+    goal: "Découvrir comment l’IA peut aider à se mettre dans la peau de l’apprenant.",
     goal: "Montrer comment l’IA peut placer le formateur dans la peau de l’apprenant.",
     activities: [
       "Observez une conversation où l’IA joue l’apprenant face à un contenu de formation.",
@@ -195,6 +204,7 @@ const steps = [
     duration: 10,
     owner: "Sandra cadre, Johan soutient",
     posture: "Ils restent aux commandes pendant la pratique.",
+    goal: "Produire un exercice de mise en action, pas seulement une conversation avec l’IA.",
     goal: "Faire produire un exercice de mise en action, pas seulement une interaction sympathique avec l’IA.",
     activities: [
       "Configurez une conversation inversée sur votre contenu.",
@@ -216,6 +226,7 @@ const steps = [
     duration: 5,
     owner: "Johan + Sandra",
     posture: "Ils ouvrent la suite et referment l’atelier.",
+    goal: "Découvrir un prolongement possible avec un agent dédié à l’ancrage.",
     goal: "Donner à voir l’agent dédié comme prolongement possible, sans ouvrir un nouveau chantier complet.",
     activities: [
       "Découvrez ce qu’un agent d’ancrage et de mise en action peut suivre.",
@@ -377,6 +388,12 @@ function renderStage() {
         <p class="stage-kicker">${step.start}’ → ${step.start + step.duration}’ · ${step.block}</p>
         <h3>${step.title}</h3>
       </div>
+      <span class="stamp-mini">${step.duration} min</span>
+    </div>
+    <div class="step-content">
+      <div>
+        <p class="stage-goal">${step.goal}</p>
+        <h4 class="participant-title">Maintenant</h4>
       <span class="stamp-mini">À vous</span>
         <p class="stage-kicker">${step.start}’ → ${step.start + step.duration}’ · ${step.owner}</p>
         <h3>${step.title}</h3>
@@ -396,6 +413,10 @@ function renderStage() {
         </ol>
         <p class="deliverable"><strong>À garder :</strong> ${step.deliverable}</p>
       </div>
+      <div class="visual-panel" aria-label="Repère visuel de l'étape">
+        <span class="big-minute">${step.start + step.duration}’</span>
+        <strong>${step.block}</strong>
+        <p>${step.deliverable}</p>
       <div class="check-panel" aria-label="Repères de l'étape">
         <h4 class="participant-title">Repères visibles</h4>
           <span class="badge">${step.posture}</span>
@@ -533,6 +554,10 @@ form.addEventListener("change", () => {
 });
 
 document.querySelector("#generatePrompt").addEventListener("click", () => generatePrompt());
+document.querySelector("#copySummary").addEventListener("click", async () => {
+  await navigator.clipboard.writeText(summary.textContent);
+});
+document.querySelector("#resetSession")?.addEventListener("click", () => {
 form.addEventListener("input", renderSummary);
 document.querySelector("#generatePrompt").addEventListener("click", generatePrompt);
 document.querySelector("#copySummary").addEventListener("click", async () => {
