@@ -3,6 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Atelier scénarisé Ancrage et IA, ambiance comédie scolaire façon Les Sous-doués." />
+    <title>Atelier Ancrage & IA — Classe des sous-doués</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;600;700;800;900&family=Special+Elite&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="film-grain" aria-hidden="true"></div>
+    <div class="classroom-lines" aria-hidden="true"></div>
+
+    <header class="hero" id="top">
+      <nav class="topbar" aria-label="Navigation de l'atelier">
+        <a class="brand" href="#top" aria-label="Retour au début">
+          <span class="brand-mark">0/20</span>
+          <span>Ancrage & IA</span>
+        </a>
+        <div class="topbar-actions">
+          <button class="ghost-button" id="resetSession" type="button">Effacer l’ardoise</button>
+          <a class="pill-link" href="#regie">Ouvrir la régie</a>
     <meta name="description" content="Atelier interactif pour concevoir un ancrage pédagogique augmenté par l'IA." />
     <title>Ancrage pédagogique augmenté par l'IA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,6 +47,28 @@
 
       <section class="hero-grid">
         <div class="hero-copy">
+          <p class="eyebrow">Johan & Sandra aux commandes · 1h30 · 12 formateurs</p>
+          <h1>Bienvenue dans la classe des apprentissages recalés.</h1>
+          <p class="hero-lead">
+            On démarre par un faux cours volontairement catastrophique, façon comédie scolaire :
+            profs trop sûrs d’eux, jargon indigeste, participants passifs. Puis Johan et Sandra
+            reprennent la main pour transformer ce fiasco en atelier d’ancrage augmenté par l’IA.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#anti-cours">Jouer le faux cours</a>
+            <a class="secondary-button" href="#regie">Voir le conducteur 90’</a>
+          </div>
+        </div>
+
+        <aside class="exam-card" aria-label="Promesse de l'atelier">
+          <div class="stamp">RECALÉ</div>
+          <h2>Le cours descendant</h2>
+          <p>sera notre cobaye pédagogique.</p>
+          <ul>
+            <li>On provoque le décrochage.</li>
+            <li>On analyse ce qui bloque l’adulte.</li>
+            <li>On conçoit une activité d’ancrage avec l’IA.</li>
+          </ul>
           <p class="eyebrow">Atelier co-construit · 12 formateurs adultes</p>
           <h1>Du faux cours soporifique à l’ancrage qui réveille.</h1>
           <p class="hero-lead">
@@ -63,6 +105,75 @@
     </header>
 
     <main>
+      <section class="section cold-open" id="anti-cours" aria-labelledby="anti-cours-title">
+        <div class="blackboard">
+          <p class="chalk-label">1. Introduction · 20-30 min</p>
+          <h2 id="anti-cours-title">Faux cours à la manière des Sous-doués.</h2>
+          <p>
+            Le design de l’ouverture assume le décalage : tableau noir, copie annotée, tampon rouge,
+            minuteur d’examen. Le public comprend immédiatement qu’il entre dans une scène jouée,
+            mais le malaise pédagogique reste réel.
+          </p>
+        </div>
+
+        <div class="duo-stage">
+          <article class="role-card johan">
+            <span class="role-badge">Johan</span>
+            <h3>Le professeur grandiloquent</h3>
+            <p class="script-line">
+              « Aujourd’hui, nous allons procéder à une stabilisation mnésico-transférentielle
+              des schèmes opératoires post-formation… prenez note, il n’y aura pas de questions. »
+            </p>
+            <p class="cue">Jeu : solennel, docte, faussement brillant, très sérieux.</p>
+          </article>
+
+          <article class="role-card sandra">
+            <span class="role-badge">Sandra</span>
+            <h3>L’assistante de discipline cognitive</h3>
+            <p class="script-line">
+              « Si vous ne comprenez pas, c’est probablement que vous n’avez pas encore assez écouté.
+              Nous poursuivons donc avec la diapositive 47. »
+            </p>
+            <p class="cue">Jeu : contrôle du temps, petites remarques absurdes, regard complice.</p>
+          </article>
+        </div>
+
+        <div class="switch-strip">
+          <strong>Rupture après 3 minutes :</strong>
+          <span>Stop. Qu’est-ce qui, là-dedans, vous a empêchés d’apprendre ?</span>
+        </div>
+      </section>
+
+      <section class="section concepts" id="cadre" aria-labelledby="cadre-title">
+        <div class="section-heading">
+          <p class="section-kicker">Le cadre, mais sans refaire un cours pénible</p>
+          <h2 id="cadre-title">Andragogie → ancrage → mise en action → IA.</h2>
+          <p>
+            La théorie arrive comme explication de l’expérience vécue. Les participants restent guidés
+            par Johan et Sandra : ils ne naviguent pas seuls, ils réagissent, produisent, testent et ajustent.
+          </p>
+        </div>
+
+        <div class="concept-grid">
+          <article>
+            <span>01</span>
+            <h3>Andragogie</h3>
+            <p>L’adulte veut comprendre l’utilité, mobiliser son expérience, résoudre un problème réel et garder de l’autonomie.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Ancrage</h3>
+            <p>Faire durer l’apprentissage : le retrouver au bon moment, dans une situation réelle, avec ses propres mots.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Mise en action</h3>
+            <p>La formation sort de la salle : l’apprenant essaie, observe, ajuste et transforme sa pratique.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>IA cadrée</h3>
+            <p>L’IA aide à concevoir, reformuler, contextualiser et itérer. Elle ne remplace ni l’intention, ni l’action.</p>
       <section class="section cold-open" id="ouverture" aria-labelledby="cold-open-title">
         <div class="section-heading">
           <p class="section-kicker">Ouverture jouée · 3 minutes maximum</p>
@@ -153,6 +264,25 @@
         </div>
       </section>
 
+      <section class="section control-room" id="regie" aria-labelledby="regie-title">
+        <div class="section-heading">
+          <p class="section-kicker">Régie Johan & Sandra</p>
+          <h2 id="regie-title">Le conducteur dynamique des 1h30.</h2>
+          <p>
+            Les cartes ci-dessous servent de télécommande d’animation. La progression, les consignes,
+            les rôles et la checklist restent enregistrés dans le navigateur.
+          </p>
+        </div>
+
+        <div class="progress-wrap" aria-label="Progression de l'atelier">
+          <div class="progress-copy">
+            <span id="progressLabel">0 min / 90 min</span>
+            <strong id="activePhaseLabel">Ouverture</strong>
+          </div>
+          <div class="progress-track"><span id="progressBar"></span></div>
+        </div>
+
+        <div class="timeline" id="timeline" aria-label="Étapes de l'atelier"></div>
       <section class="section workshop" id="atelier" aria-labelledby="atelier-title">
         <div class="section-heading">
           <p class="section-kicker">Déroulé facilité</p>
@@ -167,6 +297,51 @@
 
       <section class="section canvas-section" id="canvas" aria-labelledby="canvas-title">
         <div class="section-heading">
+          <p class="section-kicker">Copie d’examen utile</p>
+          <h2 id="canvas-title">Cadrer l’intention pédagogique avant de prompter.</h2>
+          <p>
+            Les champs reprennent le brouillon du déroulé : contenu clé, public, contexte, moment,
+            changement attendu et contraintes. Le résumé sert de base au prompt.
+          </p>
+        </div>
+
+        <div class="canvas-grid">
+          <form class="canvas-form paper" id="anchorForm">
+            <label>
+              Contenu clé à ancrer
+              <textarea name="content" placeholder="Ex. identifier ses compétences, définir un objectif, comprendre une méthode..."></textarea>
+            </label>
+            <label>
+              Public
+              <textarea name="audience" placeholder="Ex. demandeurs d’emploi, formateurs, bénéficiaires en orientation..."></textarea>
+            </label>
+            <label>
+              Contexte
+              <textarea name="context" placeholder="Ex. formation, orientation, insertion, accompagnement collectif..."></textarea>
+            </label>
+            <label>
+              Moment de l’activité
+              <select name="moment">
+                <option value="pendant la formation">pendant la formation</option>
+                <option value="à la fin de la formation">à la fin de la formation</option>
+                <option value="1 semaine après la formation">1 semaine après la formation</option>
+                <option value="1 mois après la formation">1 mois après la formation</option>
+                <option value="6 mois après la formation">6 mois après la formation</option>
+              </select>
+            </label>
+            <label>
+              Ce que les apprenants feront différemment après
+              <textarea name="change" placeholder="Ex. reformuler, choisir une action, tester une méthode, ajuster sa pratique..."></textarea>
+            </label>
+            <label>
+              Contraintes
+              <textarea name="constraints" placeholder="Ex. 12 personnes, 15 minutes, présentiel, public peu à l’aise avec l’écrit..."></textarea>
+            </label>
+          </form>
+
+          <aside class="canvas-output exam-copy">
+            <div class="output-header">
+              <span>Résumé collectif</span>
           <p class="section-kicker">Outil central</p>
           <h2 id="canvas-title">Canevas d’ancrage pédagogique augmenté par l’IA</h2>
           <p>Complétez ensemble les champs clés. Le résumé se construit automatiquement.</p>
@@ -202,6 +377,44 @@
         </div>
       </section>
 
+      <section class="section prompt-lab" id="prompt" aria-labelledby="prompt-title">
+        <div class="section-heading">
+          <p class="section-kicker">Conversation IA, pas magie IA</p>
+          <h2 id="prompt-title">Prompt de départ + relances d’itération.</h2>
+          <p>
+            Le groupe teste une première demande simple, critique le résultat, puis itère avec des relances
+            plus professionnelles : moins scolaire, plus réaliste, plus transférable.
+          </p>
+        </div>
+        <div class="prompt-builder detention-slip">
+          <label>
+            Type de résultat attendu
+            <select id="formatInput">
+              <option>activité d’ancrage simple</option>
+              <option>conversation inversée en mode apprenant</option>
+              <option>exercice de mise en action après formation</option>
+              <option>agent IA d’ancrage et de suivi</option>
+            </select>
+          </label>
+          <label>
+            Ton souhaité
+            <select id="toneInput">
+              <option>concret, adulte et terrain</option>
+              <option>très simple, peu d’écrit</option>
+              <option>challengeant mais sécurisant</option>
+            </select>
+          </label>
+          <button class="primary-button" id="generatePrompt" type="button">Générer l’antisèche</button>
+        </div>
+        <div class="prompt-columns">
+          <pre class="prompt-output" id="promptOutput"></pre>
+          <aside class="relance-box">
+            <h3>Relances rapides</h3>
+            <button type="button" data-relance="Cette activité me semble trop scolaire. Propose une variante plus proche de situations réelles.">Moins scolaire</button>
+            <button type="button" data-relance="Peux-tu simplifier cette activité pour un public peu à l’aise avec l’écrit ?">Plus accessible</button>
+            <button type="button" data-relance="Comment adapter cette activité pour qu’elle puisse être reprise après la formation, en autonomie ?">Après formation</button>
+          </aside>
+        </div>
       <section class="section prompt-lab" aria-labelledby="prompt-title">
         <div class="section-heading">
           <p class="section-kicker">Laboratoire IA</p>
@@ -233,6 +446,8 @@
     </main>
 
     <footer class="footer">
+      <p>Prototype d’atelier · Johan & Sandra gardent la main du début à la fin.</p>
+      <a href="#top">Retour au tableau</a>
       <p>Prototype d’atelier · conçu pour Forem, Bruxelles Formation et IFAPME.</p>
       <a href="#top">Retour en haut</a>
     </footer>
