@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Atelier interactif pour concevoir un ancrage pédagogique augmenté par l'IA." />
+    <title>Ancrage pédagogique augmenté par l'IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="hero" id="top">
+      <nav class="topbar" aria-label="Navigation de l'atelier">
+        <a class="brand" href="#top" aria-label="Retour au début">
+          <span class="brand-mark">IA</span>
+          <span>Ancrage pédagogique</span>
+        </a>
+        <div class="topbar-actions">
+          <button class="ghost-button" id="resetSession" type="button">Réinitialiser</button>
+          <a class="pill-link" href="#atelier">Démarrer</a>
+        </div>
+      </nav>
+
+      <section class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Atelier co-construit · 12 formateurs adultes</p>
+          <h1>Transformer un moment de formation en expérience qui s’ancre.</h1>
+          <p class="hero-lead">
+            Une interface immersive pour guider le groupe pas à pas : diagnostic, intentions,
+            scénarisation, prompts IA et engagement final.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#atelier">Lancer le parcours</a>
+            <a class="secondary-button" href="#canvas">Voir le canevas</a>
+          </div>
+        </div>
+        <aside class="impact-card" aria-label="Promesse de l'atelier">
+          <div class="orbital">
+            <span></span><span></span><span></span>
+            <strong>Ancrer</strong>
+          </div>
+          <p>
+            De l’IA comme accélérateur de conception, pas comme gadget : chaque activité produit
+            une trace exploitable dès le lendemain.
+          </p>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="section intro" aria-labelledby="intentions-title">
+        <div>
+          <p class="section-kicker">Pourquoi ce format ?</p>
+          <h2 id="intentions-title">Pas de slides : un espace vivant, manipulable et mémorable.</h2>
+        </div>
+        <div class="intro-cards">
+          <article>
+            <span>01</span>
+            <h3>Rythme</h3>
+            <p>Un déroulé visible pour sécuriser les participants et garder l’énergie du groupe.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Production</h3>
+            <p>Des micro-livrables à chaque étape : tensions, objectifs, prompts, scénario.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Transfert</h3>
+            <p>Un canevas final exportable mentalement dans leurs propres formations.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section workshop" id="atelier" aria-labelledby="atelier-title">
+        <div class="section-heading">
+          <p class="section-kicker">Déroulé facilité</p>
+          <h2 id="atelier-title">Le parcours étape par étape</h2>
+          <p>Utilisez les cartes comme conducteur d’animation. Les choix restent enregistrés dans le navigateur.</p>
+        </div>
+
+        <div class="timeline" id="timeline" aria-label="Étapes de l'atelier"></div>
+
+        <article class="step-stage" id="stepStage" aria-live="polite"></article>
+      </section>
+
+      <section class="section canvas-section" id="canvas" aria-labelledby="canvas-title">
+        <div class="section-heading">
+          <p class="section-kicker">Outil central</p>
+          <h2 id="canvas-title">Canevas d’ancrage pédagogique augmenté par l’IA</h2>
+          <p>Complétez ensemble les champs clés. Le résumé se construit automatiquement.</p>
+        </div>
+
+        <div class="canvas-grid">
+          <form class="canvas-form" id="anchorForm">
+            <label>
+              Situation de formation
+              <textarea name="situation" placeholder="Ex. Former des demandeurs d’emploi à mener un entretien client..."></textarea>
+            </label>
+            <label>
+              Moment à ancrer
+              <textarea name="moment" placeholder="Ex. La bascule entre théorie et première mise en pratique..."></textarea>
+            </label>
+            <label>
+              Preuve d’ancrage attendue
+              <textarea name="evidence" placeholder="Ex. Les participants expliquent, appliquent et adaptent la méthode en autonomie..."></textarea>
+            </label>
+            <label>
+              Rôle utile de l’IA
+              <textarea name="aiRole" placeholder="Ex. Générer des variantes de cas, simuler un apprenant, produire un feedback..."></textarea>
+            </label>
+          </form>
+
+          <aside class="canvas-output">
+            <div class="output-header">
+              <span>Trace collective</span>
+              <button class="ghost-button small" id="copySummary" type="button">Copier</button>
+            </div>
+            <div id="summary" class="summary-card"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section prompt-lab" aria-labelledby="prompt-title">
+        <div class="section-heading">
+          <p class="section-kicker">Laboratoire IA</p>
+          <h2 id="prompt-title">Générateur de prompt d’ancrage</h2>
+          <p>Un point de départ pour tester l’IA pendant l’atelier, puis améliorer le prompt en groupe.</p>
+        </div>
+        <div class="prompt-builder">
+          <label>
+            Public cible
+            <input id="audienceInput" type="text" value="adultes en formation professionnelle" />
+          </label>
+          <label>
+            Compétence visée
+            <input id="skillInput" type="text" value="transférer une notion dans une situation réelle" />
+          </label>
+          <label>
+            Format souhaité
+            <select id="formatInput">
+              <option>activité expérientielle de 20 minutes</option>
+              <option>défi en binômes</option>
+              <option>simulation avec feedback</option>
+              <option>rituel de mémorisation active</option>
+            </select>
+          </label>
+          <button class="primary-button" id="generatePrompt" type="button">Générer le prompt</button>
+        </div>
+        <pre class="prompt-output" id="promptOutput"></pre>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Prototype d’atelier · conçu pour Forem, Bruxelles Formation et IFAPME.</p>
+      <a href="#top">Retour en haut</a>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
