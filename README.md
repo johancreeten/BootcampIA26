@@ -6,6 +6,8 @@ Prototype web autonome pour animer un atelier de 12 formateurs adultes autour de
 
 Remplacer un support PowerPoint ou Genially par une expérience plus vivante :
 
+- une ouverture théâtrale volontairement anti-andragogique ;
+- une mise au point sur l'andragogie raccord avec l'univers visuel violet/bleu du slide ;
 - un déroulé d'animation étape par étape ;
 - une checklist de facilitation persistée dans le navigateur ;
 - un canevas collectif d'ancrage pédagogique ;

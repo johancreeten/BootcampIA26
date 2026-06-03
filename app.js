@@ -1,5 +1,31 @@
 const steps = [
   {
+    title: "Faire vivre l’anti-modèle",
+    duration: "8 min",
+    mode: "scène + débrief",
+    goal: "Créer une rupture mémorable entre transmission subie et apprentissage adulte.",
+    activities: [
+      "Jouer 3 minutes de cours volontairement pompeux, froid et descendant.",
+      "Demander : “Qu’est-ce qui vous a empêchés d’apprendre ?”",
+      "Relier les ressentis aux besoins de l’adulte apprenant."
+    ],
+    note: "Assumer le jeu, mais couper vite : l’humour sert le diagnostic, il ne doit pas prendre toute la place."
+  },
+  {
+    title: "Poser le cadre andragogique",
+    duration: "12 min",
+    mode: "mise au point active",
+    goal: "Installer les principes clés : utilité, expérience, problème réel, autonomie et transfert.",
+    activities: [
+      "Reprendre les mots du débrief et les classer dans les 4 principes du cadre.",
+      "Faire illustrer chaque principe par une situation vécue au Forem, à Bruxelles Formation ou à l’IFAPME.",
+      "Conclure : une formation qui s’arrête au contenu transmis reste incomplète."
+    ],
+    note: "Éviter le second cours magistral : cette mise au point doit expliquer ce qu’ils viennent de ressentir."
+  },
+  {
+    title: "Concevoir",
+    duration: "20 min",
     title: "Créer l’attention",
     duration: "10 min",
     mode: "plénière",
@@ -37,6 +63,7 @@ const steps = [
   },
   {
     title: "Augmenter par l’IA",
+    duration: "20 min",
     duration: "25 min",
     mode: "laboratoire",
     goal: "Utiliser l’IA pour produire des variantes, des simulations et du feedback actionnable.",
